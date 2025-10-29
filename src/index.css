@@ -1,0 +1,123 @@
+/* index.css - put this at the top of the file (replace your current file) */
+
+/* Tailwind import (v4 plugin approach) */
+@import "tailwindcss";
+
+/* Enable manual .dark class variant for Tailwind v4+ */
+@custom-variant dark (&:is(.dark *));
+
+/* --- Your animations (cleaned, no duplicates) --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out;
+}
+
+/* Optional dot pulse */
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.25); opacity: 1; }
+}
+.dot-pulse {
+  animation: pulse-dot 1.6s infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+button, a {
+  transition: all 0.3s ease;
+}
+
+/* remove :root color-scheme block — it only affects scrollbars/system UI and caused confusion */
+/* Add these to your index.css or global CSS file */
+
+/* Floating animation for profile photo */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Profile photo transition states */
+#floating-profile {
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 40;
+}
+
+#floating-profile.transition-to-about {
+  position: fixed !important;
+  top: 50% !important;
+  right: 10% !important;
+  transform: translateY(-50%) scale(0.8) !important;
+  z-index: 1000;
+}
+
+#floating-profile.in-about-position {
+  position: absolute !important;
+  top: 20px !important;
+  right: 20px !important;
+  transform: scale(0.7) !important;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
