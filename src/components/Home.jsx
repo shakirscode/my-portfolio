@@ -54,7 +54,7 @@ const Home = () => {
                 <span>🚀 View Projects</span>
               </button>
               <a
-                href="https://drive.google.com/file/d/1XnWCImmE2eA1B7WMPgnV8YjYVcDrTqnw/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ttYmJoDeGsJE20xHmu7yFTxUHRHh4opn/view?usp=sharing"
                 className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-xl font-semibold flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <FaFileDownload className="mr-2" />
