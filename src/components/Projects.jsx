@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "Real-time public transport tracking system using GTFS, React Leaflet, and Node.js backend. Led a team to build a real-time bus tracking system with dynamic route assignment and interactive map UI using Leaflet.",
       technologies: ["React", "Node.js", "MongoDB", "GTFS", "Leaflet"],
-      github: "https://github.com/shakirscode",
+      github: "https://github.com/shakirscode/etransit.git",
       demo: "https://github.com/shakirscode/etransit",
       period: "May 2024 – Jun 2025",
       image: "/api/placeholder/400/250",
@@ -34,8 +34,8 @@ const Projects = () => {
       description:
         "This is a dynamic weather application that provides current weather information based on user input. It fetches data from the OpenWeather API and displays it in an easy-to-understand format.",
       technologies: ["Plain HTML", "CSS", "JavaScript", "OpenWeather API"],
-      github: "https://github.com/shakirscode",
-      demo: "#",
+      github: "https://github.com/shakirscode/weather.io",
+      demo: "https://github.com/shakirscode/weather.io",
       period: "Jun 2023 – Dec 2023",
       image: "/api/placeholder/400/250",
       featured: false,
