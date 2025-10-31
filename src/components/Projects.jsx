@@ -23,7 +23,7 @@ const Projects = () => {
         "This is a SLACK (Searchable Log of All Conversation and Knowledge) is multi-purpose communication platform.",
       technologies: ["MERN", "GETStream.io API", "Twillio API"],
       github: "https://github.com/shakirscode",
-      demo: "slackplatforms.vercel.app",
+      demo: "https://slackplatforms.vercel.app/",
       period: "Jan 2024 – May 2024",
       image: "/api/placeholder/400/250",
       featured: true,
